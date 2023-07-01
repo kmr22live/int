@@ -80,7 +80,7 @@ ul {
 }
 .getstarted:hover,
 .getstarted:focus {
-  color: black;
+  color: blackgit;
   border: 0.1px solid var(--primary-color);
 }
 #productsAndServices {
@@ -265,22 +265,22 @@ ul {
   opacity: 1;
 }
 @media screen and (max-width: 576px) {
-  #mainSlider .carousel-container {
+  /* #mainSlider .carousel-container {
     margin-top: 40%;
-    display: block;
-    /* position: absolute; */
-    /* bottom: 0; */
-    /* top: 0; */
+    display: block; */
+  /* position: absolute; */
+  /* bottom: 0; */
+  /* top: 0; */
 
-    transition: cubic-bezier(0.19, 1, 0.22, 1);
-  }
+  /* transition: cubic-bezier(0.19, 1, 0.22, 1);
+  } */
 }
-@media screen and (max-width: 350px) {
+/* @media screen and (max-width: 350px) {
   #mainSlider .carousel-container {
     margin-top: 30%;
     margin-bottom: 10%;
   }
-}
+} */
 .animate__fadeInUp {
   transform: translateY(50px);
   visibility: hidden;
