@@ -398,11 +398,11 @@ ul {
   }
 }
 
-@media (max-height: 500px) {
+/* @media (max-height: 500px) {
   #mainSlider {
     height: 120vh;
   }
-}
+} */
 .carousel-control-prev,
 .carousel-control-next {
   text-decoration: none;
