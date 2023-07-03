@@ -3,6 +3,13 @@ import logo from "../assets/img/logo.svg";
 import logoname from "../assets/img/logoname.svg";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import Carousel from "./Carousel";
+import About from "./About";
+import ClientsCounts from "./ClientsCounts";
+import Tabs from "./Tabs";
+import Services from "./Services";
+import Testimonals from "./Testimonals";
+import Contact from "./Contact";
+import Footer from "./Footer";
 
 export default function Home() {
   const [navMobile, setNavMobile] = useState(false);
@@ -46,7 +53,12 @@ export default function Home() {
           </h1>
 
           <nav id="navbar" class={`navbar ${navMobile ? "navbar-mobile" : ""}`}>
-            <ul className="nav-lg-class">
+            <ul
+              className="nav-lg-class"
+              onClick={() => {
+                !navMobileIcon && handleNav();
+              }}
+            >
               <li>
                 <a href="index.html" class="active">
                   Home
@@ -54,21 +66,21 @@ export default function Home() {
               </li>
 
               <li class="dropdown">
-                <a href="#">
+                <a href="#about">
                   <span>About</span>
                 </a>
               </li>
               <li>
-                <a href="services.html" id="productsAndServices">
+                <a href="#services" id="productsAndServices">
                   Products & Services
                 </a>
               </li>
 
               <li>
-                <a href="contact.html">Contact</a>
+                <a href="#contact">Contact</a>
               </li>
               <li>
-                <button href="index.html" class="btn getstarted">
+                <button href="#about" class="btn getstarted">
                   Get Started
                 </button>
               </li>
@@ -84,109 +96,21 @@ export default function Home() {
         </div>
       </header>
       <Carousel />
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
-      <div>hai</div>
+      <About />
+      <ClientsCounts />
+      <Tabs />
+      <Services />
+      <section id="portfolio" class="portfolio">
+        <div class="container aos-init " data-aos="fade-up">
+          <div class="section-title">
+            <h2>Our Projects</h2>
+            <p>These are our recents and upcoming projects.</p>
+          </div>
+        </div>
+      </section>
+      <Testimonals />
+      <Contact />
+      <Footer />
     </div>
   );
 }
