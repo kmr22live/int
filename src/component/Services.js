@@ -85,9 +85,9 @@ export default function Services() {
               data-aos="fade-up"
               data-aos-delay="500"
             >
-              <i class="bi bi-brightness-high"></i>
+               <i class="fa-solid fa-video"></i>
               <h4>
-                <a href="#">Magni Dolore</a>
+                <a href="#">Video Surveillance</a>
               </h4>
               <p>
                 LAN and WAN are the two most popular types of computer
